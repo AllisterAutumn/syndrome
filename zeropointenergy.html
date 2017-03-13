@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zero-Point Energy</title>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="syndrome.css">
+</head>
+<header id="searchbar">
+<!--You're going to be seeing this header and footer on almost every page-->
+	<a href="file:///Users/student_29/Desktop/syndrome/register.html">Register</a> 
+
+	<p> Sign In </p>
+	<input class="signin" type="text" name="user" placeholder="Sign In">
+	
+	<input class="signin" type="password" name="pass" placeholder="Password"> 
+
+	<button> Sign In</button>
+
+	<p id="home"><a href="file:///Users/student_29/Desktop/syndrome/syndrome1.html">Home</a></p>
+
+
+	<input onclick="grow()" id="search" type="input" name="search" placeholder="&#x1f50d;                       Search"> 
+	
+	<script type="text/javascript">
+		function grow () {
+			var searchbar = document.getElementById('search');
+			var width =0;
+			var full = setInterval(frame, 3);
+
+			function frame () {
+				if(width == 200) {
+					clearInterval(full)
+				}else {
+					width++;
+					searchbar.style.width = width + 'px'
+				
+				}
+			}
+		}
+
+	</script>
+
+	<button>Search</button>
+	
+</header>
+<nav>
+
+<ul>
+	<li id="motto">
+	<a href="">Who We Are</a>
+	<div class="container">
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/ourmission.html">Our Mission</a>
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/team.html">Team</a>
+	<a  class="dropdown" href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a>
+
+
+</div>
+	</li>
+	
+	<li id="projects">
+    <a href="#">Projects</a>
+
+    <div class="container">
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/zeropointenergy.html">Zero-Point Energy</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/aeroboots.html">Aeroboots</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/bioprobe.html">Bio-Probe</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/flight.html">Aircrafts</a>
+    
+    	
+    </div>
+	</li>
+
+	<li id="locations">
+
+	<a href="#">Locations</a>
+	
+	<div class="container">
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/Metroville.html">Metroville</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/nomanison.html">Nomanison Island</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/volcano.html">The Volcano</a>
+	</div>
+	
+	</li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/team.html">Join Us</a></li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/contactus.html">Contact Us</a></li>
+</ul>
+	
+
+</nav>
+<body>
+<h1 class="titlehead">Zero Point Energy Gauntlet</h1>
+<img src="images/tech1.jpg">
+<!--made this up too. Image is from google-->
+<p class="article">               The Zero-Point Energy Gauntlet is the first of it's kind in quantum mechaical lazer guidance technology. It's is slated to bring in a new era in law enforcement, construction, and trade.<br>
+Using cold fission to contain and block electromyis within the muscle itself, and then levering the subject against the liquineurals siphoned from the atmosphere into the gauntlet, the subject can be safely contained and maneuvered without absolutely no harm to themselves or to others.<br>
+Zero-point energy was coined by Buddy Pine during his years at Strigam Technical University. It started as a mere seedling of an idea, before being solidified in his senior year thesis paper. It won accolades including the Bell Phonograph Award for Excellence in Scientific Measures. <br> It was accompanied by an actual working prototype. Though it was only enough to lift a mouse, now it able to easily lift over two tons.
+There are no limits for the Zero-Point Energy Gauntlet. Imagine the possibilities for architecture, for zoology, for hospitals, for rescue missions in the Tundra or shipwrecks in the middle of the ocean.<br><br>
+
+<!--recurring theme here-->
+<h3 class="supers"><a class="supers" href="file:///Users/student_29/Desktop/syndrome/projects.html">Super strength is no longer just for supers.</a></h3>
+
+
+
+
+<footer> 
+<ul id="footerul">
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/contactus.html"> Contact Us</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/apply.html">Careers</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/projects.html">Projects</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a></li>
+	
+
+
+</ul>
+
+
+<p id="address">	1 Syn Inc Lane<br>
+	Metroville, USA<br>
+	233-4349</p>
+
+</footer>
+</body>
+
+<style type="text/css">
+	.titlehead{
+	
+		font-family: 'PT Sans', sans-serif;
+		font-weight: normal;
+		margin-left: 60px;
+	}
+
+	img {
+	margin-left: 500px;
+	margin-bottom: 50px;
+	border-radius: 30%;
+	animation-name: fad;
+	animation-duration: 2s;
+
+
+}
+img:hover  {
+	filter: grayscale(100%);
+	transition: 1s
+	
+}
+@keyframes fad {
+	from {opacity: 0; }
+	to {opacity: 100%;}
+}
+
+.article {
+	margin-left: 250px;
+	margin-right: 200px;
+	text-align: center;
+	margin-bottom: 0;
+}
+.supers {
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+	margin-top: 0;	
+	margin-left: 30px;
+	margin-bottom: 50px;
+
+
+}
+
+</style>
+</html>

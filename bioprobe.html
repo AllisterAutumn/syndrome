@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bio Probe</title>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="syndrome.css">
+</head>
+<nav>
+
+<ul>
+	<li id="motto">
+	<a href="">Who We Are</a>
+	<div class="container">
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/ourmission.html">Our Mission</a>
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/team.html">Team</a>
+	<a  class="dropdown" href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a>
+
+
+</div>
+	</li>
+	
+	<li id="projects">
+    <a href="#">Projects</a>
+
+    <div class="container">
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/zeropointenergy.html">Zero-Point Energy</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/aeroboots.html">Aeroboots</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/bioprobe.html">Bio-Probe</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/flight.html">Aircrafts</a>
+    
+    	
+    </div>
+	</li>
+
+	<li id="locations">
+
+	<a href="#">Locations</a>
+	
+	<div class="container">
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/Metroville.html">Metroville</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/nomanison.html">Nomanison Island</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/volcano.html">The Volcano</a>
+	</div>
+	
+	</li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/team.html">Join Us</a></li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/contactus.html">Contact Us</a></li>
+</ul>
+	
+
+</nav>
+<header id="searchbar">
+
+	<a href="file:///Users/student_29/Desktop/syndrome/register.html">Register</a> 
+
+	<p> Sign In </p>
+	<input class="signin" type="text" name="user" placeholder="Sign In">
+	
+	<input class="signin" type="password" name="pass" placeholder="Password"> 
+
+	<button>  Sign In</button>
+
+	<p id="home"><a href="file:///Users/student_29/Desktop/syndrome/syndrome1.html">Home</a></p>
+
+
+	<input onclick="grow()" id="search" type="input" name="search" placeholder="&#x1f50d;                       Search"> 
+	
+	<script type="text/javascript">
+		function grow () {
+			var searchbar = document.getElementById('search');
+			var width =0;
+			var full = setInterval(frame, 3);
+
+			function frame () {
+				if(width == 200) {
+					clearInterval(full)
+				}else {
+					width++;
+					searchbar.style.width = width + 'px'
+				
+				}
+			}
+		}
+
+	</script>
+
+	<button>Search</button>
+	
+</header>
+<body>
+<h1 class="titlehead">Bio-Probe</h1>
+<img src="images/tech5.png">
+<p class="article">
+	The Bio-Probe is certainly the most ingenious when it comes to practical application. It's purpose is to detect, scan, and interpret signs of life in otherwise barren environments. The Bio-Probe is, on one hand, a drone that is aerodynamically designed to fly in even the most high pressure environments. It can withstand 100 npa (the atmospheric pressure in outer space) and over 15,000 psi (the pressure at the lowest point in Mariana Trench). <br>
+	There are still more improvements to be made
+	The Bio-Probe will be momentous in space exploration, and three have already been sold to NASA for modification.<br>
+	On the other hand, the Bio-Probe is a patient monitor, able to quickly and easily log a user's vital signs. Our collaboration with Sloane Kettering hospital has given certain versions of the Bio-Probe the ability to scan for disease,  tumors, and tissue abnormality within the body. This tool could streamline the diagnosis process in vetinarian and pediatric offices. The unseen will become seen.	
+</p>
+
+
+
+<h3 class="supers"><a class="supers" href="file:///Users/student_29/Desktop/syndrome/projects.html">Super Sight is no longer just for Supers.</a></h3>
+
+<footer> 
+<ul id="footerul">
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/contactus.html"> Contact Us</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/apply.html">Careers</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/projects.html">Projects</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a></li>
+	
+</ul>
+
+
+<p id="address">	1 Syn Inc Lane<br>
+	Metroville, USA<br>
+	233-4349</p>
+
+</footer>
+
+</body>
+<style type="text/css"> 
+.titlehead {
+	margin-top: 50px;
+	margin-left: 130px;
+}
+
+
+	img {
+	margin-left: 500px;
+	margin-bottom: 50px;
+	border-radius: 30%;
+	animation-name: fad;
+	animation-duration: 2s;
+	height: 450px;
+
+
+}
+img:hover  {
+	filter: grayscale(100%);
+	transition: 1s;
+	
+}
+@keyframes fad {
+	from {opacity: 0; }
+	to {opacity: 100%;}
+}
+
+.article {
+	margin-left: 300px;
+	margin-right: 200px;
+	text-align: center;
+	margin-bottom:20px ;
+}
+.supers {
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+	margin-top: 0;	
+	margin-left: 90px;
+	margin-bottom: 50px;
+
+
+}
+</style>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>surprise</title>
+</head>
+<body>
+<!--congratulations you found the secret page! I wouldn't stay here too long though.-->
+<p>
+	now i lay me down to sleep <br>
+	i pray the lord my soul to keep <br>
+	and if i die before i wake <br>
+	i pray the lord my soul to take
+	<br><br>
+	<a href="file:///Users/student_29/Desktop/syndrome/kronos1.html"><button>amen</button></a>
+
+</p>
+
+<img onload="Move()" id="grim" src="http://vignette3.wikia.nocookie.net/sims/images/e/e3/Grimthumb.jpg/revision/latest/scale-to-width-down/250?cb=20080312035223">
+<script type="text/javascript">
+	
+	function Move(){
+		var pic = document.getElementById("grim");
+		var pos = 1700;
+		var id = setInterval(frame, 16);
+		function frame (){
+			if (pos == -300) {
+				clearInterval (id);
+			} else {
+				pos--;
+				pic.style.left = pos + 'px';
+				
+	
+			}
+		}
+	}
+</script>
+
+
+</body>
+<style type="text/css">
+	#grim {
+		position: absolute;
+		left: 1500px;
+	}
+
+button {
+	margin-top: 100px;
+	margin-left: 300px;
+}
+
+</style>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flight</title>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="syndrome.css">
+</head>
+<nav>
+
+<ul>
+	<li id="motto">
+	<a href="">Who We Are</a>
+	<div class="container">
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/ourmission.html">Our Mission</a>
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/team.html">Team</a>
+	<a  class="dropdown" href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a>
+
+
+</div>
+	</li>
+	
+	<li id="projects">
+    <a href="#">Projects</a>
+
+    <div class="container">
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/zeropointenergy.html">Zero-Point Energy</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/aeroboots.html">Aeroboots</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/bioprobe.html">Bio-Probe</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/flight.html">Aircrafts</a>
+    
+    	
+    </div>
+	</li>
+
+	<li id="locations">
+
+	<a href="#">Locations</a>
+	
+	<div class="container">
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/Metroville.html">Metroville</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/nomanison.html">Nomanison Island</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/volcano.html">The Volcano</a>
+	</div>
+	
+	</li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/team.html">Join Us</a></li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/contactus.html">Contact Us</a></li>
+</ul>
+	
+
+</nav>
+<header id="searchbar">
+
+	<a href="file:///Users/student_29/Desktop/syndrome/register.html">Register</a> 
+
+	<p> Sign In </p>
+	<input class="signin" type="text" name="user" placeholder="Sign In">
+	
+	<input class="signin" type="password" name="pass" placeholder="Password"> 
+
+	<button>  Sign In</button>
+
+	<p id="home"><a href="file:///Users/student_29/Desktop/syndrome/syndrome1.html">Home</a></p>
+
+
+	<input onclick="grow()" id="search" type="input" name="search" placeholder="&#x1f50d;                       Search"> 
+	
+	<script type="text/javascript">
+		function grow () {
+			var searchbar = document.getElementById('search');
+			var width =0;
+			var full = setInterval(frame, 3);
+
+			function frame () {
+				if(width == 200) {
+					clearInterval(full)
+				}else {
+					width++;
+					searchbar.style.width = width + 'px'
+				
+				}
+			}
+		}
+
+	</script>
+
+	<button>Search</button>
+	
+</header>
+<body>
+
+<!--The image was taken from google images after googling 'The Incredibles'-->
+
+<h1 class="titlehead" >Flight</h1>
+<p class="article">
+	Syndrome Incorporated's flight collection is unique in both design and function. Each plane is built for a specific purpose, yet customized for their individual owners. SyInc will build this plane for you and your needs. Find the plane that's right for you.
+</p>
+
+
+<img src="images/viper.jpg">
+
+<h3>Viper</h3>
+ <p id="viper" class="article">Viper is a dual-engine drone that uses titanium rotating blades to hover, and <span>dynamically</span> maneuver using a 9 point sensory system. It is great for high altitude flight. </p>
+
+
+
+
+<img id="velocipod" src="images/velocipod.jpg">
+
+<h3>Velocipod</h3>
+<p class="article">Velocipod was named for the ferocious spinning blades that line it. The blades help maneuverability in small, tight spaces with high wind pressure. Velocipod can hover close to the ground, water, and even through dense brush <span>effortlessly</span>.</p>
+
+
+<img id="manta" src="images/tech3.jpg">
+
+<h3>Manta</h3>
+<p class="article">Manta is made for large groups. It can hold several thousand pounds in machinery, and comes fully installed with loading ports, wire pads, and a customizable<span> security</span> system.</p>
+
+
+
+<footer> 
+<ul id="footerul">
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/contactus.html"> Contact Us</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/apply.html">Careers</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/projects.html">Projects</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a></li>
+	
+
+
+</ul>
+
+
+<p id="address">	1 Syn Inc Lane<br>
+	Metroville, USA<br>
+	233-4349</p>
+
+</footer>
+</body>
+<style type="text/css">
+.titlehead {
+	
+	margin-left: 100px;
+}
+
+	img {
+	margin-left: 500px;
+	margin-bottom: 20px;
+	margin-top: 50px;
+	border-radius: 30%;
+	animation-name: fad;
+	animation-duration: 2s;
+	height: 300px;
+}
+
+
+.article {
+	margin-left: 250px;
+	margin-right: 200px;
+	text-align: center;
+	margin-bottom:10px ;
+}
+.supers {
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+	margin-top: 0;	
+	margin-left: 20px;
+	margin-bottom: 50px;
+
+
+}
+h3 {
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+	margin-left: 100px;
+
+}
+h3:hover{
+	color: rgb(240, 65, 9);
+	transition: 1s;
+}
+footer{
+	margin-top: 70px;
+}
+span {
+	color: rgba(7, 139, 233, 1)
+}
+</style>
+</html>

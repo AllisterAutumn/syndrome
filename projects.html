@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projects</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="syndrome.css">
+</head>
+<header id="searchbar">
+
+	<a href="file:///Users/student_29/Desktop/syndrome/register.html">Register</a> 
+
+	<p> Sign In </p>
+	<input class="signin" type="text" name="user" placeholder="Sign In">
+	
+	<input class="signin" type="password" name="pass" placeholder="Password"> 
+
+	<button> Sign In</button>
+
+	<p id="home"><a href="file:///Users/student_29/Desktop/syndrome/syndrome1.html">Home</a></p>
+
+
+	<input onclick="grow()" id="search" type="input" name="search" placeholder="&#x1f50d;                       Search"> 
+	
+	<script type="text/javascript">
+		function grow () {
+			var searchbar = document.getElementById('search');
+			var width =0;
+			var full = setInterval(frame, 3);
+
+			function frame () {
+				if(width == 200) {
+					clearInterval(full)
+				}else {
+					width++;
+					searchbar.style.width = width + 'px'
+				
+				}
+			}
+		}
+
+	</script>
+
+	<button>Search</button>
+	
+</header>
+<nav>
+
+<ul>
+	<li id="motto">
+	<a href="">Who We Are</a>
+	<div class="container">
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/ourmission.html">Our Mission</a>
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/team.html">Team</a>
+	<a  class="dropdown" href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a>
+
+
+</div>
+	</li>
+	
+	<li id="projects">
+    <a href="#">Projects</a>
+
+    <div class="container">
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/zeropointenergy.html">Zero-Point Energy</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/aeroboots.html">Aeroboots</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/bioprobe.html">Bio-Probe</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/flight.html">Aircrafts</a>
+    
+    	
+    </div>
+	</li>
+
+	<li id="locations">
+
+	<a href="#">Locations</a>
+	
+	<div class="container">
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/Metroville.html">Metroville</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/nomanison.html">Nomanison Island</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/volcano.html">The Volcano</a>
+	</div>
+	
+	</li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/team.html">Join Us</a></li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/contactus.html">Contact Us</a></li>
+</ul>
+	
+
+</nav>
+
+<!--The image was taken from google images after googling 'The Incredibles'-->
+
+<body>
+
+<h1 class="titlehead">Projects</h1>
+<table>
+
+<tr>
+	<td id="gauntlet"><a href="file:///Users/student_29/Desktop/syndrome/zeropointenergy.html"> Zero-Point Energy</a></td>
+	<td id="boots"><a href="file:///Users/student_29/Desktop/syndrome/aeroboots.html"> Aero Boots</a></td>
+	<td id="probe"><a href="file:///Users/student_29/Desktop/syndrome/bioprobe.html"> Bio-Probe</a></td>
+</tr>
+<tr>
+	<td id="manta"><a href="file:///Users/student_29/Desktop/syndrome/flight.html">Manta Jets</a></td>
+	<td id="viper"><a href="file:///Users/student_29/Desktop/syndrome/flight.html">Viper</a></td>
+	<td id="pod"><a href="file:///Users/student_29/Desktop/syndrome/flight.html">Velocipod</a></td>
+</tr>
+</table>
+<h3 class="supers"> Everyone can be Super.</h3>
+<footer> 
+<ul id="footerul">
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/contactus.html"> Contact Us</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/apply.html">Careers</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/projects.html">Projects</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a></li>
+	
+
+
+</ul>
+
+
+<p id="address">	1 Syn Inc Lane<br>
+	Metroville, USA<br>
+	233-4349</p>
+
+</footer>
+</body>
+<style type="text/css">
+	
+	table {
+		border: 2px solid black;
+		border-collapse: collapse;
+		margin-left: 390px;
+		margin-top: 30px;
+		font-family: 'PT Sans', sans-serif;
+		margin-bottom: 50px;
+	}
+	td{
+		
+		height: 250px;
+		width: 250px;
+		text-align: center;
+		font-size: 13pt;
+
+	}
+	.titlehead {
+
+		font-size: 20pt;
+		margin-left: 90px;
+	}
+
+	td:hover a {
+	color: rgb(240, 65, 9);
+	transition: 1s;
+	}
+
+	@keyframes backg {
+		from {opacity: 0;}
+		to {
+			opacity: 100%;}}
+	
+
+	#gauntlet:hover  {
+		background-image:url(images/tech1.jpg);
+		background-size: cover;
+		transition: 1s;
+	}
+	#boots:hover{
+		background-image:url(images/jetboots.jpg);
+
+	}
+	#probe:hover{
+		background-image: url(images/tech2.jpg);
+	}
+	#manta:hover{background-image: url(images/tech3.jpg);
+	}
+	
+	#viper:hover{
+		background-image: url(images/viper.jpg);
+	}
+	#pod:hover{
+		background-image: url(images/velocipod.jpg);
+	}
+	td:hover {
+		background-size: cover;
+		animation-name: backg;
+		animation-duration: 1s;
+		
+	}
+	.supers{
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+	margin-top: 0;	
+	margin-left: 90px;
+	margin-bottom: 50px;
+}
+
+
+	
+
+
+</style>
+</html>

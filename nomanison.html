@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nomanison Island</title>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="syndrome.css">
+</head>
+<header id="searchbar">
+
+	<a href="file:///Users/student_29/Desktop/syndrome/register.html">Register</a> 
+
+	<p> Sign In </p>
+	<input class="signin" type="text" name="user" placeholder="Sign In">
+	
+	<input class="signin" type="password" name="pass" placeholder="Password"> 
+
+	<button> Sign In</button>
+
+	<p id="home"><a href="file:///Users/student_29/Desktop/syndrome/syndrome1.html">Home</a></p>
+
+
+	<input onmouseover="grow()" id="search" type="input" name="search" placeholder="&#x1f50d;                       Search"> 
+	
+	<script type="text/javascript">
+	
+		function grow () {
+			var searchbar = document.getElementById('search');
+			var width =0;
+			var full = setInterval(frame, 3);
+
+			function frame () {
+				if(width == 200) {
+					clearInterval(full)
+				}else {
+					width++;
+					searchbar.style.width = width + 'px'
+				
+				}
+			}
+		}
+
+	</script>
+
+	<button>Search</button>
+	
+</header>
+<nav>
+
+<ul>
+	<li id="motto">
+	<a href="">Who We Are</a>
+	<div class="container">
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/ourmission.html">Our Mission</a>
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/team.html">Team</a>
+	<a  class="dropdown" href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a>
+
+
+</div>
+	</li>
+	
+	<li id="projects">
+    <a href="#">Projects</a>
+
+    <div class="container">
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/zeropointenergy.html">Zero-Point Energy</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/aeroboots.html">Aeroboots</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/bioprobe.html">Bio-Probe</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/flight.html">Aircrafts</a>
+    
+    	
+    </div>
+	</li>
+
+	<li id="locations">
+
+	<a href="#">Locations</a>
+	
+	<div class="container">
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/Metroville.html">Metroville</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/nomanison.html">Nomanison Island</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/volcano.html">The Volcano</a>
+	</div>
+	
+	</li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/team.html">Join Us</a></li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/contactus.html">Contact Us</a></li>
+</ul>
+	
+
+</nav>
+<body>
+<!--The image was taken from google images after googling 'The Incredibles'-->
+
+<h1 class="titlehead">Nomanison Island</h1>
+
+<img  height="300px" src="images/nomanison.jpg">
+
+<p class="article">
+Far into the Atlantic Ocean lies Nomanison Island, untouched by anything but the elements. The perfect setting for a high-tech state of the art laboratory that uses green sources of energy. Water mills, hydropumps, solar panels, wind mills, steam energy. Neutrino labs, vacuum tunnels, The Observatory. We have it all. <br>
+Gaining Nomanison Island was truly one of the landmark moments in SyInc history. If Metroville has our roots, then Nomanison Island is where we are truly allowed to fluorish. Many of our team has relocated to the island. We've built fully functioning dormatories with all amenities. We also have weekly flights to and from the island, and are open every weekend for visits and tours.<br>Just don't get too comfortable, or you might not want to come back!
+
+ </p>
+
+<h2> <a id="visit" href="file:///Users/student_29/Desktop/syndrome/apply.html">Visit Us</a></h2>
+<footer> 
+<ul id="footerul">
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/contactus.html"> Contact Us</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/apply.html">Careers</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/projects.html">Projects</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a></li>
+	
+</ul>
+
+
+<p id="address">	1 Syn Inc Lane<br>
+	Metroville, USA<br>
+	233-4349</p>
+
+</footer>
+
+</body>
+<style type="text/css">
+
+.titlehead {
+	margin-left: 150px;
+}
+	h2 {
+		margin-bottom: 30px;
+		margin-top: 0;
+	}
+	.article {
+		margin-top: 50px;
+		margin-bottom: 30px;
+		margin-left: 350px;
+		margin-right: 200px;
+		text-align: center;
+	}
+	img {
+	margin-left: 500px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	border-radius: 30%;
+	animation-name: fad;
+	animation-duration: 2s;
+	height: 300px;
+}
+#visit {
+	margin-left: 750px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+footer {
+	margin-top: 70px;
+}
+
+</style>
+</html>

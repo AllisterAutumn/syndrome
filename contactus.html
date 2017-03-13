@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="syndrome.css">
+</head>
+<header id="searchbar">
+
+	<a href="file:///Users/student_29/Desktop/syndrome/register.html">Register</a> 
+
+	<p> Sign In </p>
+	<input class="signin" type="text" name="user" placeholder="Sign In">
+	
+	<input class="signin" type="password" name="pass" placeholder="Password"> 
+
+	<button> <a href="file:///Users/student_29/Desktop/syndrome/Kronos1.html"> Sign In</a></button>
+	<p id="home"><a href="file:///Users/student_29/Desktop/syndrome/syndrome1.html">Home</a></p>
+
+
+	<input onclick="grow()" id="search" type="input" name="search" placeholder="&#x1f50d;                       Search"> 
+	
+	<script type="text/javascript">
+	//This animation code is for the search bar in the header. It is meant to expand when the clicked.
+
+		function grow () {
+			var searchbar = document.getElementById('search');
+			var width =0;
+			var full = setInterval(frame, 3);
+
+			function frame () {
+				if(width == 200) {
+					clearInterval(full)
+				}else {
+					width++;
+					searchbar.style.width = width + 'px'
+				
+				}
+			}
+		}
+
+	</script>
+
+	<button>Search</button>
+	
+</header>
+<nav>
+
+<ul>
+	<li id="motto">
+	<a href="">Who We Are</a>
+	<div class="container">
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/ourmission.html">Our Mission</a>
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/team.html">Team</a>
+	<a  class="dropdown" href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a>
+
+
+</div>
+	</li>
+	
+	<li id="projects">
+    <a href="#">Projects</a>
+
+    <div class="container">
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/zeropointenergy.html">Zero-Point Energy</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/aeroboots.html">Aeroboots</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/bioprobe.html">Bio-Probe</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/flight.html">Aircrafts</a>
+    
+    	
+    </div>
+	</li>
+
+	<li id="locations">
+
+	<a href="#">Locations</a>
+	
+	<div class="container">
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/Metroville.html">Metroville</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/nomanison.html">Nomanison Island</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/volcano.html">The Volcano</a>
+	</div>
+	
+	</li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/team.html">Join Us</a></li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/contactus.html">Contact Us</a></li>
+</ul>
+	
+
+</nav>
+
+<h1 class="titlehead"> Contact Us</h1>
+<body>
+
+<p class="article"> If you have an account, please log in and message us through the database. If you are guest, please fill out this form and we will get back to you as soon as we can.</p>
+
+<div id="divbox">
+<h3 id="name">Name</h3>
+<input id="namebox"  type="text" name="name" placeholder="Name" >
+<h3 id="email">E-mail</h3>
+<input id="emailbox" type="emailbox" name="E-mail" placeholder="E-mail">
+<h3 id="message">Message</h3>
+<textarea id="messagebox" placeholder="Message" cols="56" rows="20"></textarea>
+
+<a id="buttonlink" href="file:///Users/student_29/Desktop/syndrome/thankyou.html"><button id="button">Submit</button></a>
+</div>
+
+
+	<footer> 
+<ul id="footerul">
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/contactus.html"> Contact Us</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/apply.html">Careers</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/projects.html">Projects</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a></li>
+</ul>
+
+
+<p id="address">	1 Syn Inc Lane<br>
+	Metroville, USA<br>
+	233-4349</p>
+
+</footer>
+
+</body>
+<style type="text/css">
+	.titlehead {
+		margin-top: 100px;
+		margin-left: 50px;
+	}
+
+ .article {
+ 	margin-left: 30px;
+ 	margin-right: 0;
+ 	margin-bottom: 20px;
+ }
+ #divbox{
+ 	margin-left: 550px;
+ 	font-family: 'PT Sans', sans-serif;
+ 	display: inline-block;
+ 	margin-bottom: 50px;
+ }
+ #name, #email, #message {
+ 	margin-left: 150px;
+ }
+ #namebox, #emailbox{
+ 	width: 350px;
+ }
+ #messagebox {
+ 	margin-right: 50px;
+ }
+#button{
+	display:block;
+	margin-top: 20px;
+	margin-left: 150px;
+}
+#buttonlink:hover {
+display: block;
+}
+input, textarea:focus{
+	outline: 0;
+}
+
+</style>
+</html>

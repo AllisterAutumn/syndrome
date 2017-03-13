@@ -1,0 +1,161 @@
+<!DOCTYPE html><!--This is Val R's final project'-->
+<html>
+<head>
+	<title>Aero Boots</title>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="syndrome.css">
+</head>
+<header id="searchbar">
+
+	<a href="file:///Users/student_29/Desktop/syndrome/register.html">Register</a> 
+
+	<p> Sign In </p>
+	<input class="signin" type="text" name="user" placeholder="Sign In">
+	
+	<input class="signin" type="password" name="pass" placeholder="Password"> 
+
+	<button>  Sign In</button>
+
+	<p id="home"><a href="file:///Users/student_29/Desktop/syndrome/syndrome1.html">Home</a></p>
+
+
+	<input onclick="grow()" id="search" type="input" name="search" placeholder="&#x1f50d;                       Search"> 
+	
+	<script type="text/javascript">
+		function grow () {
+			var searchbar = document.getElementById('search');
+			var width =0;
+			var full = setInterval(frame, 3);
+
+			function frame () {
+				if(width == 200) {
+					clearInterval(full)
+				}else {
+					width++;
+					searchbar.style.width = width + 'px'
+				
+				}
+			}
+		}
+
+	</script>
+
+	<button>Search</button>
+	
+</header>
+
+<!--The image was taken from google images after googling 'The Incredibles'-->
+<nav>
+
+<ul>
+	<li id="motto">
+	<a href="">Who We Are</a>
+	<div class="container">
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/ourmission.html">Our Mission</a>
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/team.html">Team</a>
+	<a  class="dropdown" href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a>
+
+
+</div>
+	</li>
+	
+	<li id="projects">
+    <a href="#">Projects</a>
+
+    <div class="container">
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/zeropointenergy.html">Zero-Point Energy</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/aeroboots.html">Aeroboots</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/bioprobe.html">Bio-Probe</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/flight.html">Aircrafts</a>
+    
+    	
+    </div>
+	</li>
+
+	<li id="locations">
+
+	<a href="#">Locations</a>
+	
+	<div class="container">
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/Metroville.html">Metroville</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/nomanison.html">Nomanison Island</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/volcano.html">The Volcano</a>
+	</div>
+	
+	</li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/team.html">Join Us</a></li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/contactus.html">Contact Us</a></li>
+</ul>
+	
+
+</nav>
+<body> 
+<h1 class="titlehead">Aeroboots</h1>
+<img src="images/jetboots.jpg">
+
+<p class="article">
+	The Aeroboots, one of the most iconic and well-known inventions in pop culture has finally been brought to life. These boots will grant the gift of high altitude flight to whoever is wearing them. They were nicknamed 'Seven League Boots' because of how far, fast, and high this boots can go with just one charge.<br>
+	The Aeroboots can support up to 600lbs of weight, and can withstand over 156,000 newtons. They are designed with hydrostatic coils meant to keep the user upright and balanced. They will never flip over, and will remain steady even in the strongest winds. The user merely has to lean their body in whatever direction they want to go in. Sensitive neuraline wires that line the shoe will change the thruster's direction in a millisecond.<br>And with the state-of-the-art cooling system, the boots will never overheat or combust. <br> The Aeroboots was the first invention that Buddy Pine conceptualized. At the tender age of 9, he already had a working prototype built and hovering. Though that occasion didn't end succesfully it paved the way to Syndrome Inc and the Aeroboots as we know them today.<br>
+	The Aeroboots are slated to be the most popular Syndrome Inc project ever. It will revolutionize the way the world travels. With these boots, we can lead the way to a new age.<br><br>
+
+</p>
+<h3 class="supers"><a class="supers" href="file:///Users/student_29/Desktop/syndrome/projects.html">Super Flight is no longer just for Supers.</a></h3>
+<footer> 
+<ul id="footerul">
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/contactus.html"> Contact Us</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/apply.html">Careers</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/projects.html">Projects</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a></li>
+	
+
+
+</ul>
+
+
+<p id="address">	1 Syn Inc Lane<br>
+	Metroville, USA<br>
+	233-4349</p>
+
+</footer>
+</body>
+<style type="text/css"> /* This code will be reused a lot as it is the basic format of all the article pages*/
+.titlehead {
+	margin-top: 50px;
+	margin-left: 130px;
+}
+	img {
+	margin-left: 540px;
+	margin-bottom: 50px;
+	border-radius: 30%;
+	animation-name: fad;
+	animation-duration: 2s;
+	height: 450px;
+
+
+}
+img:hover  {
+	filter: grayscale(100%);
+	transition: 1s;
+	
+}
+@keyframes fad {
+	from {opacity: 0; }
+	to {opacity: 100%;}
+}
+
+.article {
+	margin-left: 300px;
+	margin-right: 200px;
+	text-align: center;
+	margin-bottom:10px ;
+}
+.supers {
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+	margin-top: 0;	
+	margin-left: 90px;
+	margin-bottom: 50px;
+
+}
+</style>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Supers</title>
+	<link href="https://fonts.googleapis.com/css?family=Exo+2|Six+Caps" rel="stylesheet">
+</head>
+<header>
+	<h1><a href="file:///Users/student_29/Desktop/syndrome/kronos2.html">Back</a></h1>
+</header>
+<body>
+<div id="pictures">
+<!--I got these pictures from pausing screenshooting a youtube video-->
+
+<img class="slideshow" src="terminated/super1.png" width="90%">
+<img class="slideshow" src="terminated/super2.png" width="90%">
+<img class="slideshow" src="terminated/super3.png" width="90%">
+<img class="slideshow" src="terminated/super4.png" width="90%">
+<img class="slideshow" src="terminated/super5.png" width="90%">
+<img class="slideshow" src="terminated/super6.png" width="90%">
+<img class="slideshow" src="terminated/super7.png" width="90%">
+<img class="slideshow" src="terminated/super8.png" width="90%">
+<img class="slideshow" src="terminated/super9.png" width="90%">
+
+<img class="slideshow" src="terminated/super10.png" width="90%">
+<img class="slideshow" src="terminated/super11.png" width="90%">
+<img class="slideshow" src="terminated/supers13.png" width="90%">
+<img class="slideshow" src="terminated/supers14.png" width="90%">
+<img class="slideshow" src="terminated/supers15.png" width="90%">
+
+</div>
+<script> //this slideshow script is an exact duplicate of the slideshow on the main/home page
+var slideNo = 0;
+	slideShow(slideNo);
+
+	
+function slideShow (n) {
+	var x = document.getElementsByClassName("slideshow");
+
+if (n < 0) {
+	slideNo = x.length ;
+}
+if (n > x.length){
+	slideNo = 0;
+}
+for (var i=0; i < x.length; i++){
+	x[i].style.display="none";
+}
+x[slideNo].style.display="block";
+slideNo++;
+if (slideNo < 0) {slideNo = 13};
+if (slideNo>13) {slideNo = 0};
+setTimeout(slideShow, 1000);
+}
+
+</script>
+
+</body>
+<style type="text/css">
+body {
+	background-color: black;
+}
+.slideshow {
+	margin-top: 70px;
+	margin-left: 70px;
+}
+
+a {
+	color: white;
+	margin-left: 50px;
+	text-decoration: none;
+	font-family: 'Exo 2', sans-serif;
+}
+
+a:hover {
+	color:rgb(123, 198, 197);
+}
+
+</style>
+</html>

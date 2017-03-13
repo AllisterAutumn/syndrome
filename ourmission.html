@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Mission</title>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="syndrome.css">
+	
+</head>
+<header id="searchbar">
+
+	<a href="#">Register</a> 
+
+	<p> Sign In </p>
+	<input class="signin" type="text" name="user" placeholder="Sign In">
+	
+	<input class="signin" type="password" name="pass" placeholder="Password"> 
+
+	<button>  Sign In</button>
+
+	<p id="home"><a href="file:///Users/student_29/Desktop/syndrome/syndrome1.html">Home</a></p>
+
+
+	<input onclick="grow()" id="search" type="input" name="search" placeholder="&#x1f50d;                       Search"> 
+	
+	<script type="text/javascript">
+		function grow () {
+			var searchbar = document.getElementById('search');
+			var width =0;
+			var full = setInterval(frame, 3);
+
+			function frame () {
+				if(width == 200) {
+					clearInterval(full)
+				}else {
+					width++;
+					searchbar.style.width = width + 'px'
+				
+				}
+			}
+		}
+
+	</script>
+
+	<button>Search</button>
+</header>
+<nav>
+
+<ul>
+	<li id="motto">
+	<a href="">Who We Are</a>
+	<div class="container">
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/ourmission.html">Our Mission</a>
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/team.html">Team</a>
+	<a  class="dropdown" href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a>
+
+
+</div>
+	</li>
+	
+	<li id="projects">
+    <a href="#">Projects</a>
+
+    <div class="container">
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/zeropointenergy.html">Zero-Point Energy</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/aeroboots.html">Aeroboots</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/bioprobe.html">Bio-Probe</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/flight.html">Aircrafts</a>
+    
+    	
+    </div>
+	</li>
+
+	<li id="locations">
+
+	<a href="#">Locations</a>
+	
+	<div class="container">
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/Metroville.html">Metroville</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/nomanison.html">Nomanison Island</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/volcano.html">The Volcano</a>
+	</div>
+	
+	</li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/team.html">Join Us</a></li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/contactus.html">Contact Us</a></li>
+</ul>
+	
+
+</nav>
+<body>
+<h1 class="titlehead">Our Mission</h1>
+<!--Here is where you're gonna learn what this company actually does and what it is about.-->
+
+<div>
+<p class="article">In a world where strength is not measured by the tenacity in one's heart, but by one's genetic musculature, and where greatness is not measured by one's dedication towards growth and learning, but by the fame they garner, Syndrome Incorporated wants to be different. <br>
+We don't want a single person to ever feel limited by the genes they were born with again. We engineer technology that bridge the gap between humans and Supers. With our research and engineering abilities, we can drag these 'godlike' abilities back to an earthly level. Heat vision can be turned on with a turn of a goggle lens. Ice touch can be implanted in a glove. Too long have beneficial and life-saving powers been monopolized by a select 1% of individuals. Supers can't save everyone, but if applied expansively, their powers<b> <i>can</i></b>.<br>These technologies and their effects are as real as anything a genetic superhero can do.<br>
+That's our motto: Everyone can be super.
+ Superpowers shouldn't be allocated by a random genetic lottery, they should be free for everyone. There shouldn't be superheroes. And that's our mission.  
+ We want to give everyone the chance to have superpowers, everyone the chance to be super.
+
+ </p>
+ </div>
+
+ <h3 class="supers">Because when everyone is be super...<br><br><span>Then no one will be.</span></h3>
+<!-- This quote was taken directly from the movie 'The Incredibles' .-->
+
+<footer> 
+<ul id="footerul">
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/contactus.html"> Contact Us</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/apply.html">Careers</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/projects.html">Projects</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a></li>
+	
+
+
+</ul>
+
+
+<p id="address">	1 Syn Inc Lane<br>
+	Metroville, USA<br>
+	233-4349</p>
+
+</footer>
+</body>
+<style type="text/css">
+	.titlehead {
+		
+		margin-left:100px;
+	}
+
+   .article {
+   	text-align: center;
+   	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 10px; 
+	margin-top: 10px;  
+	font-size: 15pt;
+	padding: 0 40px 0 40px;
+}
+.supers {
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 40px;
+	margin-left: 70px;
+	font-size: 15pt;
+
+}
+footer {
+	margin-top: 100px;
+}
+span {
+	color:rgb(240, 65, 9);
+	font-size: 15pt;
+}
+
+</style>
+
+</html>

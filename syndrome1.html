@@ -1,0 +1,197 @@
+<!DOCTYPE html> 
+<!--This is Val R.'s final project-->
+<html>
+<head>
+	<title>Syndrome Incorporated</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="syndrome.css">
+</head>
+<header id="searchbar">
+
+	<a href="file:///Users/student_29/Desktop/syndrome/register.html">Register</a> 
+
+	<p> Sign In </p>
+	<input class="signin" id="signin" type="text" name="user" placeholder="Sign In">
+	
+	<input class="signin" id="password" type="password" name="pass" placeholder="Password"> 
+
+	<button onclick="access()"> Sign In</button>
+	<!--This code is to make a working username and passowrd field. The Username is: incrediboy and the password is: mirage-->
+  
+<script type="text/javascript">
+
+	 function access (){
+    	var password = document.getElementById('password').value;
+    	var signin = document.getElementById('signin').value;
+     if(signin = "incrediboy" && password == "mirage")
+      {
+        window.open('file:///Users/student_29/Desktop/syndrome/kronos1.html')
+      }
+     else
+     {
+       window.alert("Wrong Password or Username")
+      }
+    }
+    </script>
+
+	<p id="home"><a href="file:///Users/student_29/Desktop/syndrome/syndrome1.html">Home</a></p>
+
+
+	<input onclick="grow()" id="search" type="input" name="search" placeholder="&#x1f50d;                       Search"> 
+	
+	<script type="text/javascript">
+	//This animation code is for the search bar in the header. It is meant to expand when the clicked.
+
+		function grow () {
+			var searchbar = document.getElementById('search');
+			var width =0;
+			var full = setInterval(frame, 3);
+
+			function frame () {
+				if(width == 200) {
+					clearInterval(full)
+				}else {
+					width++;
+					searchbar.style.width = width + 'px'
+				
+				}
+			}
+		}
+
+	</script>
+
+	<button>Search</button>
+	
+</header>
+
+<nav>
+<h1 class="titlehead"> Syndrome Incorporated</h1>
+
+<!--All of these images were taken from googling 'The Incredibles Syndrome'-->
+
+<div id="pictures">
+
+<img class="slideshow" src="images/tech1.jpg" width="350px">
+<img class="slideshow" src="images/tech4.jpg" width="350px" height="350px">
+<img class="slideshow" src="images/tech2.jpg" width="350px" height="350px">
+<img class="slideshow" src="images/image5.jpg" width="350px" height="350px">
+<img class="slideshow" src="images/tech3.jpg" width="350px" height="350px">
+<img class="slideshow" src="images/tech5.png" width="350px" height="350px">
+</div>
+<script>
+var slideNo = 0;
+	slideShow(slideNo);
+
+function slideShow (n) {
+	var x = document.getElementsByClassName("slideshow");
+
+if (n < 0) {
+	slideNo = x.length ;
+}
+if (n > 3){
+	slideNo = 0;
+}
+for (var i=0; i < x.length; i++){
+	x[i].style.display="none";
+}
+x[slideNo].style.display="block";
+slideNo++;
+if (slideNo < 0) {slideNo = x.length};
+if (slideNo>3) {slideNo = 0};
+setTimeout(slideShow, 4000);
+}
+
+</script>
+<nav>
+
+<ul>
+	<li id="motto">
+	<a href="">Who We Are</a>
+	<div class="container">
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/ourmission.html">Our Mission</a>
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/team.html">Team</a>
+	<a  class="dropdown" href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a>
+
+
+</div>
+	</li>
+	
+	<li id="projects">
+    <a href="file:///Users/student_29/Desktop/syndrome/projects.html">Projects</a>
+
+    <div class="container">
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/zeropointenergy.html">Zero-Point Energy</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/aeroboots.html">Aeroboots</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/bioprobe.html">Bio-Probe</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/flight.html">Aircrafts</a>
+    
+    	
+    </div>
+	</li>
+
+	<li id="locations">
+
+	<a href="#">Locations</a>
+	
+	<div class="container">
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/Metroville.html">Metroville</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/nomanison.html">Nomanison Island</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/volcano.html">The Volcano</a>
+	</div>
+	
+	</li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/team.html">Join Us</a></li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/contactus.html">Contact Us</a></li>
+</ul>
+	
+
+</nav>
+<body>
+<h1 id="titletwo">
+	Opening of Liminal Laboratories <br> 4.8.18
+</h1>
+<!--I made this all up. Extra points for creative writing.-->
+
+<p class="article">
+On 4.8.18 Buddy Pine, CEO and Founder of Syndrome Industries (SyInc) cut the ribbon that marked the official opening of Liminal Laboratories.<br><br>
+Liminal Lab was the brain-child of Buddy Pine and renowned geneticist Dr. Christine Tatum to devote an entire five floor building to studying the many variations and mutations possible in the  human genome. The goal of the lab is to create a state-of-the-art space where innovation, science, and discovery is at the goal of every project.<br>
+Like SyInc, Liminal Labs is privately owned, but will still do its best to give back to the community. A second branch of the Buddy Pine S.W.A.N program will be opened, as will a $50,000 Scholarship for young people heading into the biology field.<br>
+The celebration was continued with speeches from Mayor Judith Reed and Senator McCraig. Both espoused the benefits that Liminal Labs would bring to the community. Afterwards, guests headed inside for the banquet and evening gala where they were treated with celebrity performances from Odile, The Glass Trio, and others.
+<br><br>
+It was truly a momentous occasion having Dr. Christine Tatum take control of a dream that has been so long in the making.
+Liminal Laboratories is set to be the leading genetics research lab in the world with a solid set of scientists and brilliant minds at the hiring roster.
+Dr. Tatum's research will set the groundwork for discovering breakthroughs in the mysteries of the human body.<br><br>
+
+Liminal Laboratories was made possible through gracious donations from SyInc, the parent corporation which also donates to many other foundations dedicatd to the enrichment of the human race.  <br><br>
+Syndrome Inc. fully supports the ideas that Liminal Labs was built on. We look forward to working together to finding the cures to the many dangerous mutations possible in the human genome.
+	
+</p>
+
+<footer> <!--this is basically the nav bar but repurposed to be horizontal and more succint-->
+<ul id="footerul">
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/contactus.html"> Contact Us</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/apply.html">Careers</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/projects.html">Projects</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a></li>
+	
+
+
+</ul>
+
+
+<p id="address">	1 Syn Inc Lane<br>
+	Metroville, USA<br>
+	233-4349</p>
+
+</footer>
+</body>
+<style type="text/css">
+
+input:focus{
+	outline: 0;
+}
+
+	
+
+</style>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Team</title>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="syndrome.css">
+</head>
+<header id="searchbar">
+
+	<a href="#">Register</a> 
+
+	<p> Sign In </p>
+	<input class="signin" type="text" name="user" placeholder="Sign In">
+	
+	<input class="signin" type="password" name="pass" placeholder="Password"> 
+
+	<button>  Sign In</button>
+
+	<p id="home"><a href="file:///Users/student_29/Desktop/syndrome/syndrome1.html">Home</a></p>
+
+
+	<input onclick="grow()" id="search" type="input" name="search" placeholder="&#x1f50d;                       Search"> 
+	
+	<script type="text/javascript">
+		function grow () {
+			var searchbar = document.getElementById('search');
+			var width =0;
+			var full = setInterval(frame, 3);
+
+			function frame () {
+				if(width == 200) {
+					clearInterval(full)
+				}else {
+					width++;
+					searchbar.style.width = width + 'px'
+				
+				}
+			}
+		}
+
+	</script>
+
+	<button>Search</button>
+</header>
+<nav>
+
+<ul>
+	<li id="motto">
+	<a href="">Who We Are</a>
+	<div class="container">
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/ourmission.html">Our Mission</a>
+	<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/team.html">Team</a>
+	<a  class="dropdown" href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a>
+
+
+</div>
+	</li>
+	
+	<li id="projects">
+    <a href="#">Projects</a>
+
+    <div class="container">
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/zeropointenergy.html">Zero-Point Energy</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/aeroboots.html">Aeroboots</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/bioprobe.html">Bio-Probe</a>
+    <a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/flight.html">Aircrafts</a>
+    
+    	
+    </div>
+	</li>
+
+	<li id="locations">
+
+	<a href="#">Locations</a>
+	
+	<div class="container">
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/Metroville.html">Metroville</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/nomanison.html">Nomanison Island</a>
+		<a class="dropdown" href="file:///Users/student_29/Desktop/syndrome/volcano.html">The Volcano</a>
+	</div>
+	
+	</li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/team.html">Join Us</a></li>
+	<li><a href="file:///Users/student_29/Desktop/syndrome/contactus.html">Contact Us</a></li>
+</ul>
+	
+
+</nav>
+<body>
+
+<h1 class="titlehead">Join Us</h1>
+
+<p class="article">
+
+
+Here at Syndrome Incorporated we value teamwork, responsibility, intelligence and creativity, and that is what we look for in our employees. Each person on the SyInc team is hand-picked picked, trained, and  placed in the most appropriate role. It doesn't matter who you are, where you're from, or what you did before us, if you have something to offer, we want it. 
+<br><br>
+SyInc will do all it can to make sure our teammembers are happy and satified. We offer full health benefits, and 401K plans. If you're a recent graduate, never fear. SyInc has a place for you too. Apply for one of our junior teammember positions, and we'll make sure you'll have the training and experience to make great strides within our company. If you have practical experience, but no a degree, SyInc wants you too. We know much wisdom is worth, and would never take it for granted.<br><br>Our work environment promotes commonality and a hive-minded approach towards our one goal. Do you have what it takes?
+<br><br>
+To see job listings, you must sign-in or register an account.
+</p>
+
+<h1><a class="apply" href="file:///Users/student_29/Desktop/syndrome/apply.html">Apply</a></h1>
+
+<footer> 
+<ul id="footerul">
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/contactus.html"> Contact Us</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/apply.html">Careers</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/projects.html">Projects</a></li>
+<li class="footerli"><a href="file:///Users/student_29/Desktop/syndrome/partners.html">Partners</a></li>
+	
+
+
+</ul>
+
+
+<p id="address">	1 Syn Inc Lane<br>
+	Metroville, USA<br>
+	233-4349</p>
+
+</footer>
+
+</body>
+
+<style type="text/css">
+
+
+.titlehead{
+	margin-left: 90px;
+}
+.article {
+	margin-left: 250px;
+	margin-right: 250px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+	footer {
+		margin-top: 90px;
+			}	
+
+	.apply {
+		margin-left: 700px;
+	}	
+
+
+  	.apply:hover {
+	color: rgb(56, 185, 240);
+
+		}
+</style>
+
+</html>
